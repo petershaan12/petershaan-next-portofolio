@@ -30,7 +30,7 @@ Please note that the design of the website is inspired from "https://fahreziadha
    npm i
    ```
 
-3. Install dependencies
+3. Run The App
 
    ```sh
    npm run dev / yarn dev
