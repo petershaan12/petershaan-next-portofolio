@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://petershaan.com" target="_blank">
-    <img src="https://raw.githubusercontent.com/DataDog/integrations-extras/master/vercel/images/logo-full-black.png" width="100" alt="Vercel Status" />
+    <img src="https://raw.githubusercontent.com/petershaan12/peter-next/73e82b97b1652e9862678ef6a1c1340ef5d060b1/public/preview.png" width="100" alt="Vercel Status" />
   </a>
 </p>
 
