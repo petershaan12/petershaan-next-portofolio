@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://user-images.githubusercontent.com/62770500/199333052-3cd38b31-7e77-4883-a1ff-a037afcc0492.png" width="100" />
+  <img alt="Logo" src="https://raw.githubusercontent.com/petershaan12/peterShaan-next-portofolio/16c75083de4d37db79d2cace39fc748617af93f4/public/logo.png" width="100" />
 </div>
 <h1 align="center">
   petershaan.com
@@ -24,7 +24,7 @@ Please note that the design of the website is inspired from "https://fahreziadha
    git clone https://github.com/petershaan12/peterShaan-next-portofolio.git
    ```
 
-2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
+2. Install use NPM 
 
    ```sh
    npm i
