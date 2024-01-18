@@ -4,7 +4,7 @@ import React from "react";
 export default function Tools() {
   return (
     <>
-      <main className="container w-1/2 -mt-8">
+      <main className="container md:w-1/2 -mt-8">
         <section className="container px-8 md:px-0">
           <h2 className="text-4xl font-bold font-helvetica">Project Aku</h2>
           <p>

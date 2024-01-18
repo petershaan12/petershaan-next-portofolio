@@ -3,7 +3,7 @@ import React from "react";
 export default function Tools() {
   return (
     <>
-      <main className="container w-1/2">
+      <main className="container md:w-1/2">
         <section className="container px-8 md:px-0">
           <h2 className="text-4xl font-bold font-helvetica">
             Tools yang aku gunakan sehari-hari
