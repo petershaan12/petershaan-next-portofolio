@@ -10,7 +10,7 @@ export default function Tools() {
           <p>
             berikut adalah experience aku dibidang{" "}
             <span className="bg-yellow-200  dark:bg-white text-black">
-              Pekerjaan
+              Pekerjaan & Projek
             </span>
           </p>
 
@@ -34,7 +34,7 @@ export default function Tools() {
                   Universitas Advent Indonesia
                 </h6>
                 <p className="font-regular text-xs">
-                  menggunakan full wordpress
+                  [2023 - 2024] menggunakan full wordpress
                 </p>
               </div>
             </a>
@@ -52,7 +52,43 @@ export default function Tools() {
                   Fitur Evaluasi Diri online.unai.edu
                 </h6>
                 <p className="font-regular text-xs">
-                  menggunakan php dan sql server
+                  [2023] menggunakan php dan sql server
+                </p>
+              </div>
+            </a>
+            <a href="https://github.com/petershaan12/GAPA-Tetris?tab=readme-ov-file" target="_blank">
+              <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
+                <Image
+                  src="/gapaTetris.png"
+                  width={500}
+                  height={500}
+                  class="aspect-[12/6]"
+                />
+              </div>
+              <div className="mt-2 px-2 py-1 w-full">
+                <h6 className="font-medium text-sm">
+                  GAPA Tetris
+                </h6>
+                <p className="font-regular text-xs">
+                  [2023] menggunakan JavaFX & Scene Builder
+                </p>
+              </div>
+            </a>
+            <a href="https://petershaan12.github.io/Wonderful-Indonesia-Clone/" target="_blank">
+              <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
+                <Image
+                  src="/wonderfulIndonesia.png"
+                  width={500}
+                  height={500}
+                  class="aspect-[12/6]"
+                />
+              </div>
+              <div className="mt-2 px-2 py-1 w-full">
+                <h6 className="font-medium text-sm">
+                  Clonning Website Wonderful Indonesia
+                </h6>
+                <p className="font-regular text-xs">
+                  [2023] menggunakan HTML, CSS(Bootstrap), Javascript 
                 </p>
               </div>
             </a>
@@ -68,7 +104,7 @@ export default function Tools() {
               <div className="mt-2 px-2 py-1 w-full">
                 <h6 className="font-medium text-sm">Indo Drives Solution</h6>
                 <p className="font-regular text-xs">
-                  menggunakan full wordpress
+                  [2019] menggunakan full wordpress
                 </p>
               </div>
             </a>
