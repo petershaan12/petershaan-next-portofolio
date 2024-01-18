@@ -8,12 +8,7 @@
   Publish on <a href="https://petershaan.com" target="_blank">petershaan.com</a> built with <a href="https://nextjs.org/" target="_blank">Nextjs</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
 </p>
 
-<p align="center">
-  <a href="https://petershaan.com" target="_blank">
-    <img src="https://raw.githubusercontent.com/petershaan12/peter-next/73e82b97b1652e9862678ef6a1c1340ef5d060b1/public/preview.png" width="100" alt="Vercel Status" />
-  </a>
-</p>
-
+![demo](https://raw.githubusercontent.com/petershaan12/peter-next/73e82b97b1652e9862678ef6a1c1340ef5d060b1/public/preview.png)
 ## 🚨 About this repo (please read!)
 
 Haii 👋 you can use this code for your own website, but please dont forget me for copyright 😊.
