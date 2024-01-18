@@ -16,12 +16,14 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.font-helvetica {
+  font-family: 'Helvetica-Bold', sans-serif;
+}
+
+
+@font-face {
+  font-family: 'Helvetica-Bold';
+  src: url('/Helvetica-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
