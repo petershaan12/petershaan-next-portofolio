@@ -20,7 +20,11 @@ export default function Home() {
               <p className="text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-white">
                 21 years old from 🇮🇩,🖥️ Student of Informatic Technology, and
                 also Content Creator and Video Editor
-                <a className="text-blue-500 flex font-semibold" href="">
+                <a
+                  className="text-blue-500 flex font-semibold"
+                  target="_blank"
+                  href="mailto:contactpetershaan@gmail.com"
+                >
                   Interested in working together ? Email me!
                 </a>
               </p>
