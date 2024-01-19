@@ -76,7 +76,7 @@ export default function Tools() {
               </div>
             </a>
             <a
-              href="https://the-wild-oasis-green-six.vercel.app/dashboard"
+              href="https://the-wild-oasis-green-six.vercel.app"
               target="_blank"
             >
               <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
@@ -96,7 +96,7 @@ export default function Tools() {
               </div>
             </a>
             <a
-              href="https://the-wild-oasis-green-six.vercel.app/dashboard"
+              href="https://the-fast-react-pizza-alpha.vercel.app"
               target="_blank"
             >
               <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
