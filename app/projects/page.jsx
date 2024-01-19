@@ -172,7 +172,7 @@ export default function Tools() {
 
             <p>
               Create & Develop Website{" "}
-              <span className="underline">unai.edu (NEW 2023)</span> <br />
+              <span className="bg-yellow-200  dark:bg-white text-black">unai.edu</span>  (NEW 2023) <br />
               Development & Database Administrator Module UNAI (Universitas
               Advent Indonesia)
             </p>

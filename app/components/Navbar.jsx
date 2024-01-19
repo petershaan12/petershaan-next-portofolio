@@ -24,7 +24,7 @@ const Navbar = () => {
     <header className="container px-10 md:px-20 lg:px-40 ">
       <nav className=" py-10 mb-12 flex justify-between">
         <Link href={"/"}>
-          <h1 className="cursor-pointer font-helvetica text-xl text-gray-800 dark:text-white font-helvetica">
+          <h1 className="cursor-pointer font-helvetica text-2xl text-gray-800 dark:text-white ">
             Ps
           </h1>
         </Link>
@@ -35,7 +35,7 @@ const Navbar = () => {
           <li>
             <button
               onClick={() => setNavbarOpen(!navbarOpen)}
-              className="dark:text-white dark:hover:bg-slate-700 hover:bg-slate-200 active:border-2 active:border-blue-400 md:px-2 md:py-2 cursor-pointer text-lg items-center  ml-4 flex"
+              className="dark:text-white dark:hover:bg-slate-700 hover:bg-slate-200 border-2 border-white dark:border-gray-900 dark:hover:border-blue-800 active:border-2 active:border-blue-400 md:px-2 md:py-2 cursor-pointer text-lg items-center  ml-4 flex"
             >
               <Bars3Icon className="h-5 w-5 mr-2 cursor-pointer" />
               Menu

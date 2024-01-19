@@ -10,17 +10,14 @@ const ThemeSwitcher = () => {
   const renderThemeChanger = () => {
     const currentTheme = theme === "system" ? systemTheme : theme;
 
-    if (currentTheme === "dark") {
-      return (
-        <SunIcon
-          className="w-6 h-6 text-yellow-500"
-          role="button"
-          onClick={() => setTheme("light")}
-        />
-      );
-    } else {
-      return <TbMoonStars onClick={() => setTheme("dark")} />;
-    }
+    return currentTheme === "dark" ? 
+    <SunIcon
+        className="w-6 h-6 text-yellow-500"
+        role="button"
+        onClick={() => setTheme("light")}
+    /> 
+    : 
+    <TbMoonStars onClick={() => setTheme("dark")} />;
   };
 
   return <>{renderThemeChanger()}</>;

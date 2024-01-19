@@ -1,6 +1,12 @@
+"use client"
+import Image from "next/image";
 import React from "react";
+import { useTheme } from "next-themes";
 
 export default function Tools() {
+  const { theme, systemTheme } = useTheme();
+  const currentTheme = theme === "system" ? systemTheme : theme;
+
   return (
     <>
       <main className="container md:w-1/2">
@@ -23,6 +29,9 @@ export default function Tools() {
                   target="_blank"
                   class="relative group border rounded-md p-4 transition-all hover:border-foreground bg-secondary/20 hover:bg-secondary/50"
                 >
+                  <Image  src="/icon/vscode.png" 
+                  width={50}
+      height={50}/>
                   <p class="font-semibold">Visual Studio Code</p>{" "}
                   <p class="text-xs">Text Editor</p>{" "}
                 </a>
@@ -31,6 +40,10 @@ export default function Tools() {
                   target="_blank"
                   class="relative group border rounded-md p-4 transition-all hover:border-foreground bg-secondary/20 hover:bg-secondary/50"
                 >
+                  <Image 
+                  src={currentTheme === "dark" ? "/icon/git_dark.png" : "/icon/git.png"} 
+                  width={50}
+      height={50}/>
                   <p class="font-semibold">GitHub</p>{" "}
                   <p class="text-xs">Version Control System</p>{" "}
                 </a>
@@ -39,6 +52,8 @@ export default function Tools() {
                   target="_blank"
                   class="relative group border rounded-md p-4 transition-all hover:border-foreground bg-secondary/20 hover:bg-secondary/50"
                 >
+                  <Image  src="/icon/android.png" width={50}
+      height={50}/>
                   <p class="font-semibold">Android Studio</p>{" "}
                   <p class="text-xs">Android Development</p>{" "}
                 </a>
@@ -57,6 +72,8 @@ export default function Tools() {
                   target="_blank"
                   class="relative group border rounded-md p-4 transition-all hover:border-foreground bg-secondary/20 hover:bg-secondary/50"
                 >
+                  <Image  src="/icon/msi.png" width={50}
+      height={50}/>
                   <p class="font-semibold">MSI GF65 </p>{" "}
                   <p class="text-xs">Laptop</p>{" "}
                 </a>
@@ -65,6 +82,8 @@ export default function Tools() {
                   target="_blank"
                   class="relative group border rounded-md p-4 transition-all hover:border-foreground bg-secondary/20 hover:bg-secondary/50"
                 >
+                  <Image  src="/icon/mouse.png" width={50}
+      height={50}/>
                   <p class="font-semibold">Mouse MSI M99</p>{" "}
                   <p class="text-xs">Mouse</p>{" "}
                 </a>

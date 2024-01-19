@@ -4,8 +4,8 @@ import { BsGithub } from "react-icons/bs";
 
 export default function Footer() {
   return (
-    <footer className=" flex flex-col items-center py-10 pt-32 text-center w-full ">
-      <hr class="h-px my-3 bg-gray-200 border-0 w-full  dark:bg-gray-700" />
+    <footer className="flex flex-col items-center py-10 pt-32 text-center w-full ">
+      <hr class="h-px my-3 bg-gray-200 border-0 w-full  dark:bg-gray-700 -z-10" />
       <div className="text-2xl flex justify-center gap-10 py-7 text-gray-400 dark:text-white">
         <a href="https://www.youtube.com/@petershaan_" target={"_blank"}>
           <AiFillYoutube className="mouse-clicked" />
