@@ -35,7 +35,7 @@ const Navbar = () => {
           <li>
             <button
               onClick={() => setNavbarOpen(!navbarOpen)}
-              className=" hover:bg-slate-200 active:border-2 active:border-blue-400 md:px-2 md:py-2 cursor-pointer text-lg items-center  ml-4 flex"
+              className="dark:text-white dark:hover:bg-slate-700 hover:bg-slate-200 active:border-2 active:border-blue-400 md:px-2 md:py-2 cursor-pointer text-lg items-center  ml-4 flex"
             >
               <Bars3Icon className="h-5 w-5 mr-2 cursor-pointer" />
               Menu

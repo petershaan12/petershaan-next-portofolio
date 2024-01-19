@@ -56,7 +56,10 @@ export default function Tools() {
                 </p>
               </div>
             </a>
-            <a href="https://github.com/petershaan12/GAPA-Tetris?tab=readme-ov-file" target="_blank">
+            <a
+              href="https://github.com/petershaan12/GAPA-Tetris?tab=readme-ov-file"
+              target="_blank"
+            >
               <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
                 <Image
                   src="/gapaTetris.png"
@@ -66,15 +69,55 @@ export default function Tools() {
                 />
               </div>
               <div className="mt-2 px-2 py-1 w-full">
-                <h6 className="font-medium text-sm">
-                  GAPA Tetris
-                </h6>
+                <h6 className="font-medium text-sm">GAPA Tetris</h6>
                 <p className="font-regular text-xs">
                   [2023] menggunakan JavaFX & Scene Builder
                 </p>
               </div>
             </a>
-            <a href="https://petershaan12.github.io/Wonderful-Indonesia-Clone/" target="_blank">
+            <a
+              href="https://the-wild-oasis-green-six.vercel.app/dashboard"
+              target="_blank"
+            >
+              <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
+                <Image
+                  src="/thewildoasis.png"
+                  width={500}
+                  height={500}
+                  class="aspect-[12/6]"
+                />
+              </div>
+              <div className="mt-2 px-2 py-1 w-full">
+                <h6 className="font-medium text-sm">The Wild Oasis</h6>
+                <p className="font-regular text-xs">
+                  [2023] menggunakan React Js + Styled Components dengan
+                  Supabase
+                </p>
+              </div>
+            </a>
+            <a
+              href="https://the-wild-oasis-green-six.vercel.app/dashboard"
+              target="_blank"
+            >
+              <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
+                <Image
+                  src="/thefastreactpizza.png"
+                  width={500}
+                  height={500}
+                  class="aspect-[12/6]"
+                />
+              </div>
+              <div className="mt-2 px-2 py-1 w-full">
+                <h6 className="font-medium text-sm">The Fast React Pizza</h6>
+                <p className="font-regular text-xs">
+                  [2023] menggunakan React Js dengan Tailwind
+                </p>
+              </div>
+            </a>
+            <a
+              href="https://petershaan12.github.io/Wonderful-Indonesia-Clone/"
+              target="_blank"
+            >
               <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
                 <Image
                   src="/wonderfulIndonesia.png"
@@ -88,14 +131,14 @@ export default function Tools() {
                   Clonning Website Wonderful Indonesia
                 </h6>
                 <p className="font-regular text-xs">
-                  [2023] menggunakan HTML, CSS(Bootstrap), Javascript 
+                  [2023] menggunakan HTML, CSS(Bootstrap), Javascript
                 </p>
               </div>
             </a>
             <a href="http://www.indodrives.rf.gd" target="_blank">
               <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
                 <Image
-                  src="/indodrives.jpeg"
+                  src="/indodrives.png"
                   width={300}
                   height={500}
                   class="aspect-[12/6]"
