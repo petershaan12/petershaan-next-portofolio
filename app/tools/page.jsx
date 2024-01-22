@@ -19,9 +19,11 @@ export default function Tools() {
           <div className="flex md:flex-nowrap flex-wrap">
             <div className=" md:w-1/2 mr-5">
               <div class="mt-10 mb-5 flex flex-row items-center gap-4">
-                <h1 class=" bg-neutral-200 dark:bg-slate-700 px-2 py-1 text-sm">
+              <div class="border-b border-dashed w-[20px] border-gray-200 dark:border-slate-700"></div>
+                <h1 class=" bg-neutral-200 dark:bg-slate-700 px-2 py-1 text-sm rounded-md">
                   Software Development
                 </h1>
+                <div class="border-b grow border-dashed border-gray-200 dark:border-slate-700"></div>
               </div>
               <div class="grid grid-cols-2 gap-2">
                 <a
@@ -57,18 +59,42 @@ export default function Tools() {
                   <p class="font-semibold">Android Studio</p>{" "}
                   <p class="text-xs">Android Development</p>{" "}
                 </a>
+                <a
+                  href="https://www.figma.com/"
+                  target="_blank"
+                  class="relative group border rounded-md p-4 transition-all hover:border-foreground bg-secondary/20 hover:bg-secondary/50"
+                >
+                  <Image  src="/icon/figma.png" width={50}
+      height={50}/>
+                  <p class="font-semibold">Figma</p>{" "}
+                  <p class="text-xs">UI/UX</p>{" "}
+                </a>
+                <a
+                  href="https://www.microsoft.com/en-us/sql-server/"
+                  target="_blank"
+                  class="relative group border rounded-md p-4 transition-all hover:border-foreground bg-secondary/20 hover:bg-secondary/50"
+                >
+                   <Image 
+                  src={currentTheme === "dark" ? "/icon/sqlserver_dark.png" : "/icon/sqlserver.png"} 
+                  width={50}
+      height={50}/>
+                  <p class="font-semibold">Sql Server Management Studio (SMSS)</p>{" "}
+                  <p class="text-xs">Database</p>{" "}
+                </a>
               </div>
             </div>
             <div className="md:w-1/2 w-full">
               <div class="mt-10 mb-5 flex flex-row items-center gap-4">
-                <h1 class=" bg-neutral-200 dark:bg-slate-700 px-2 py-1 text-sm">
+              <div class="border-b border-dashed w-[20px] border-gray-200 dark:border-slate-700"></div>
+                <h1 class=" bg-neutral-200 dark:bg-slate-700 px-2 py-1 text-sm rounded-md">
                   Hardware
                 </h1>
+                <div class="border-b grow border-dashed border-gray-200 dark:border-slate-700"></div>
               </div>
 
               <div class="grid grid-cols-2 gap-2">
                 <a
-                  href="https://code.visualstudio.com/"
+                  href="https://www.msi.com/Laptop/GF65-Thin-10UX/Specification"
                   target="_blank"
                   class="relative group border rounded-md p-4 transition-all hover:border-foreground bg-secondary/20 hover:bg-secondary/50"
                 >
@@ -78,7 +104,7 @@ export default function Tools() {
                   <p class="text-xs">Laptop</p>{" "}
                 </a>
                 <a
-                  href="https://git-scm.com/"
+                  href="https://www.tokopedia.com/sakurabdg/mouse-gaming-msi-m99-orignal?utm_source=google&utm_medium=organic&utm_campaign=pdp-seo"
                   target="_blank"
                   class="relative group border rounded-md p-4 transition-all hover:border-foreground bg-secondary/20 hover:bg-secondary/50"
                 >

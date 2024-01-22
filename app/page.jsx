@@ -13,7 +13,7 @@ export default function Home() {
                 Peter Shaan
               </h2>
               <h3 className="text-sm pt-4 md:text-lg lg:text-xl dark:text-white">
-                <span className="bg-yellow-200  dark:bg-white text-black">
+                <span className="bg-yellow-200  dark:bg-white text-black px-2">
                   Programmer and Frontend Dev
                 </span>
               </h3>

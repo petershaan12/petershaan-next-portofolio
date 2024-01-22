@@ -9,15 +9,17 @@ export default function Tools() {
           <h2 className="text-4xl font-bold font-helvetica">Project Aku</h2>
           <p>
             berikut adalah experience aku dibidang{" "}
-            <span className="bg-yellow-200  dark:bg-white text-black">
+            <span className=" underline font-medium text-black dark:text-white">
               Pekerjaan & Projek
             </span>
           </p>
 
-          <div className="mt-10 mb-5 flex flex-row items-center gap-4">
-            <h1 className=" bg-neutral-200 dark:bg-slate-700 px-2 py-1 text-sm">
+          <div className="mt-10 mb-5 flex flex-row items-center gap-4 ">
+          <div class="border-b border-dashed w-[20px] border-gray-200 dark:border-slate-700"></div>
+            <h1 className=" bg-neutral-200 rounded-md dark:bg-slate-700 px-2 py-1 text-sm">
               Project
             </h1>
+            <div class="border-b grow border-dashed border-gray-200 dark:border-slate-700"></div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <a href="https://www.unai.edu" target="_blank">
@@ -26,7 +28,7 @@ export default function Tools() {
                   src="/unai.png"
                   width={500}
                   height={500}
-                  class="aspect-[12/6]"
+                  className="aspect-[12/6] "
                 />
               </div>
               <div className="mt-2 px-2 py-1 w-full">
@@ -34,8 +36,10 @@ export default function Tools() {
                   Universitas Advent Indonesia
                 </h6>
                 <p className="font-regular text-xs">
-                  [2023 - 2024] menggunakan full wordpress
+                  [2023 - 2024]
                 </p>
+                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">wordpress</button>
+                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">avada</button>
               </div>
             </a>
             <a href="https://www.online.unai.edu" target="_blank">
@@ -52,8 +56,10 @@ export default function Tools() {
                   Fitur Evaluasi Diri online.unai.edu
                 </h6>
                 <p className="font-regular text-xs">
-                  [2023] menggunakan php dan sql server
+                  [2023]
                 </p>
+                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">php</button>
+                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">sql server</button>
               </div>
             </a>
             <a
@@ -71,12 +77,14 @@ export default function Tools() {
               <div className="mt-2 px-2 py-1 w-full">
                 <h6 className="font-medium text-sm">GAPA Tetris</h6>
                 <p className="font-regular text-xs">
-                  [2023] menggunakan JavaFX & Scene Builder
+                  [2023]
                 </p>
+                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">Java FX</button>
+                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">Scene Builder</button>
               </div>
             </a>
             <a
-              href="https://the-wild-oasis-green-six.vercel.app"
+              href="https://github.com/petershaan12/the-wild-oasis"
               target="_blank"
             >
               <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
@@ -90,13 +98,15 @@ export default function Tools() {
               <div className="mt-2 px-2 py-1 w-full">
                 <h6 className="font-medium text-sm">The Wild Oasis</h6>
                 <p className="font-regular text-xs">
-                  [2023] menggunakan React Js + Styled Components dengan
-                  Supabase
+                  [2023]
                 </p>
+                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">React JS</button>
+                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">Supabase</button>
+                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">Styled Component</button>
               </div>
             </a>
             <a
-              href="https://the-fast-react-pizza-alpha.vercel.app"
+              href="https://github.com/petershaan12/the-fast-react-pizza"
               target="_blank"
             >
               <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
@@ -104,18 +114,20 @@ export default function Tools() {
                   src="/thefastreactpizza.png"
                   width={500}
                   height={500}
-                  class="aspect-[12/6]"
+                  class="aspect-[12/6] "
                 />
               </div>
               <div className="mt-2 px-2 py-1 w-full">
                 <h6 className="font-medium text-sm">The Fast React Pizza</h6>
                 <p className="font-regular text-xs">
-                  [2023] menggunakan React Js dengan Tailwind
+                  [2023]
                 </p>
+                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">React Router</button>
+                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">Tailwind CSS</button>
               </div>
             </a>
             <a
-              href="https://petershaan12.github.io/Wonderful-Indonesia-Clone/"
+              href="https://github.com/petershaan12/Wonderful-Indonesia-Clone"
               target="_blank"
             >
               <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
@@ -131,8 +143,10 @@ export default function Tools() {
                   Clonning Website Wonderful Indonesia
                 </h6>
                 <p className="font-regular text-xs">
-                  [2023] menggunakan HTML, CSS(Bootstrap), Javascript
+                  [2023] 
                 </p>
+                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">HTML</button>
+                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">Bootstrap 5</button>
               </div>
             </a>
             <a href="http://www.indodrives.rf.gd" target="_blank">
@@ -147,15 +161,19 @@ export default function Tools() {
               <div className="mt-2 px-2 py-1 w-full">
                 <h6 className="font-medium text-sm">Indo Drives Solution</h6>
                 <p className="font-regular text-xs">
-                  [2019] menggunakan full wordpress
+                  [2019]
                 </p>
+                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">wordpress</button>
+                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">c-panel</button>
               </div>
             </a>
           </div>
           <div className="mt-10 mb-5 flex flex-row items-center gap-4">
-            <h1 className=" bg-neutral-200 dark:bg-slate-700 px-2 py-1 text-sm">
+          <div class="border-b border-dashed w-[20px] border-gray-200 dark:border-slate-700"></div>
+            <h1 className=" bg-neutral-200 rounded-md dark:bg-slate-700 px-2 py-1 text-sm">
               Experience
             </h1>
+            <div class="border-b grow border-dashed border-gray-200 dark:border-slate-700"></div>
           </div>
           <div class="prose prose-zinc dark:prose-invert max-w-full w-full">
             <p>August 2023 - Present</p>
@@ -172,7 +190,7 @@ export default function Tools() {
 
             <p>
               Create & Develop Website{" "}
-              <span className="bg-yellow-200  dark:bg-white text-black">unai.edu</span>  (NEW 2023) <br />
+              <a className=" underline font-medium text-black dark:text-white " href="https://unai.edu">unai.edu</a>  (NEW 2023) <br />
               Development & Database Administrator Module UNAI (Universitas
               Advent Indonesia)
             </p>
