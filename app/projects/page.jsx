@@ -1,12 +1,16 @@
 import Image from "next/image";
 import React from "react";
+import ProjectsItem from "../components/ProjectItem";
+import SectionHeader from "../components/SectionHeader";
+import SectionTitle from "../components/SectionTitle";
+import ProjectExperience from "../components/ProjectExperience";
 
 export default function Tools() {
   return (
     <>
-      <main className="container md:w-1/2 -mt-8">
-        <section className="container px-8 md:px-0">
-          <h2 className="text-4xl font-bold font-helvetica">Project Aku</h2>
+      <main className="container md:w-1/2">
+        <section className="px-8 md:px-0">
+          <SectionTitle>Project Aku</SectionTitle>
           <p>
             berikut adalah experience aku dibidang{" "}
             <span className=" underline font-medium text-black dark:text-white">
@@ -14,192 +18,73 @@ export default function Tools() {
             </span>
           </p>
 
-          <div className="mt-10 mb-5 flex flex-row items-center gap-4 ">
-          <div class="border-b border-dashed w-[20px] border-gray-200 dark:border-slate-700"></div>
-            <h1 className=" bg-neutral-200 rounded-md dark:bg-slate-700 px-2 py-1 text-sm">
-              Project
-            </h1>
-            <div class="border-b grow border-dashed border-gray-200 dark:border-slate-700"></div>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <a href="https://www.unai.edu" target="_blank">
-              <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
-                <Image
-                  src="/unai.png"
-                  width={500}
-                  height={500}
-                  className="aspect-[12/6] "
-                />
-              </div>
-              <div className="mt-2 px-2 py-1 w-full">
-                <h6 className="font-medium text-sm">
-                  Universitas Advent Indonesia
-                </h6>
-                <p className="font-regular text-xs">
-                  [2023 - 2024]
-                </p>
-                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">wordpress</button>
-                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">avada</button>
-              </div>
-            </a>
-            <a href="https://www.online.unai.edu" target="_blank">
-              <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
-                <Image
-                  src="/online.unai.png"
-                  width={500}
-                  height={500}
-                  class="aspect-[12/6]"
-                />
-              </div>
-              <div className="mt-2 px-2 py-1 w-full">
-                <h6 className="font-medium text-sm">
-                  Fitur Evaluasi Diri online.unai.edu
-                </h6>
-                <p className="font-regular text-xs">
-                  [2023]
-                </p>
-                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">php</button>
-                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">sql server</button>
-              </div>
-            </a>
-            <a
-              href="https://github.com/petershaan12/GAPA-Tetris?tab=readme-ov-file"
-              target="_blank"
-            >
-              <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
-                <Image
-                  src="/gapaTetris.png"
-                  width={500}
-                  height={500}
-                  class="aspect-[12/6]"
-                />
-              </div>
-              <div className="mt-2 px-2 py-1 w-full">
-                <h6 className="font-medium text-sm">GAPA Tetris</h6>
-                <p className="font-regular text-xs">
-                  [2023]
-                </p>
-                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">Java FX</button>
-                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">Scene Builder</button>
-              </div>
-            </a>
-            <a
-              href="https://github.com/petershaan12/the-wild-oasis"
-              target="_blank"
-            >
-              <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
-                <Image
-                  src="/thewildoasis.png"
-                  width={500}
-                  height={500}
-                  class="aspect-[12/6]"
-                />
-              </div>
-              <div className="mt-2 px-2 py-1 w-full">
-                <h6 className="font-medium text-sm">The Wild Oasis</h6>
-                <p className="font-regular text-xs">
-                  [2023]
-                </p>
-                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">React JS</button>
-                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">Supabase</button>
-                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">Styled Component</button>
-              </div>
-            </a>
-            <a
-              href="https://github.com/petershaan12/the-fast-react-pizza"
-              target="_blank"
-            >
-              <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
-                <Image
-                  src="/thefastreactpizza.png"
-                  width={500}
-                  height={500}
-                  class="aspect-[12/6] "
-                />
-              </div>
-              <div className="mt-2 px-2 py-1 w-full">
-                <h6 className="font-medium text-sm">The Fast React Pizza</h6>
-                <p className="font-regular text-xs">
-                  [2023]
-                </p>
-                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">React Router</button>
-                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">Tailwind CSS</button>
-              </div>
-            </a>
-            <a
-              href="https://github.com/petershaan12/Wonderful-Indonesia-Clone"
-              target="_blank"
-            >
-              <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
-                <Image
-                  src="/wonderfulIndonesia.png"
-                  width={500}
-                  height={500}
-                  class="aspect-[12/6]"
-                />
-              </div>
-              <div className="mt-2 px-2 py-1 w-full">
-                <h6 className="font-medium text-sm">
-                  Clonning Website Wonderful Indonesia
-                </h6>
-                <p className="font-regular text-xs">
-                  [2023] 
-                </p>
-                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">HTML</button>
-                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">Bootstrap 5</button>
-              </div>
-            </a>
-            <a href="http://www.indodrives.rf.gd" target="_blank">
-              <div className="rounded-xl overflow-clip relative transition-all border border-transparent dark:hover:border-white hover:border-black cursor-pointer">
-                <Image
-                  src="/indodrives.png"
-                  width={300}
-                  height={500}
-                  class="aspect-[12/6]"
-                />
-              </div>
-              <div className="mt-2 px-2 py-1 w-full">
-                <h6 className="font-medium text-sm">Indo Drives Solution</h6>
-                <p className="font-regular text-xs">
-                  [2019]
-                </p>
-                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">wordpress</button>
-                <button  className="rounded-full bg-blue-200 px-3 py-1 text-xs mt-2 text-blue-800 font-semibold hover:text-white hover:bg-blue-600 dark:hover:text-white dark:hover:bg-blue-600 mr-2 dark:bg-blue-950 dark:text-blue-400">c-panel</button>
-              </div>
-            </a>
-          </div>
-          <div className="mt-10 mb-5 flex flex-row items-center gap-4">
-          <div class="border-b border-dashed w-[20px] border-gray-200 dark:border-slate-700"></div>
-            <h1 className=" bg-neutral-200 rounded-md dark:bg-slate-700 px-2 py-1 text-sm">
-              Experience
-            </h1>
-            <div class="border-b grow border-dashed border-gray-200 dark:border-slate-700"></div>
-          </div>
-          <div class="prose prose-zinc dark:prose-invert max-w-full w-full">
-            <p>August 2023 - Present</p>
-            <h1 className="text-3xl  my-2">
-              <span className="font-helvetica">Programmer at</span>
-              <a
-                href="https://unai.edu"
-                target="_blank"
-                className="underline px-2 "
-              >
-                Universitas Advent Indonesia
-              </a>
-            </h1>
+          <SectionHeader title="Project" />
 
-            <p>
-              Create & Develop Website{" "}
-              <a className=" underline font-medium text-black dark:text-white " href="https://unai.edu">unai.edu</a>  (NEW 2023) <br />
-              Development & Database Administrator Module UNAI (Universitas
-              Advent Indonesia)
-            </p>
-            <ul>
-              <li>php</li>
-              <li>Bootstrap</li>
-              <li>mysql</li>
-            </ul>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <ProjectsItem
+              src="/projects/unai.png"
+              title="Universitas Advent Indonesia"
+              tags={["wordpress", "avada"]}
+              year="2023 - 2024"
+              url="https://www.unai.edu"
+            />
+            <ProjectsItem
+              src="/projects/online.unai.png"
+              title="Fitur Evaluasi Diri online.unai.edu"
+              tags={["php", "sql server"]}
+              year="2023"
+              url="https://online.unai.edu/mhs/login.php"
+            />
+
+            <ProjectsItem
+              src="/projects/gapaTetris.png"
+              title="GAPA Tetris"
+              tags={["Java FX", "Scene Builder"]}
+              year="2023"
+              url="https://github.com/petershaan12/GAPA-Tetris?tab=readme-ov-file"
+            />
+
+            <ProjectsItem
+              src="/projects/thewildoasis.png"
+              title="The Wild Oasis"
+              tags={["React JS", "Supabase", "Styled Component"]}
+              year="2023"
+              url="https://github.com/petershaan12/the-wild-oasis"
+            />
+
+            <ProjectsItem
+              src="/projects/thefastreactpizza.png"
+              title="The Fast React Pizza"
+              tags={["React Router", "Tailwind CSS"]}
+              year="2023"
+              url="https://github.com/petershaan12/the-fast-react-pizza"
+            />
+
+            <ProjectsItem
+              src="/projects/wonderfulIndonesia.png"
+              title="Clonning Website Wonderful Indonesia"
+              tags={["HTML", "Bootstrap 5"]}
+              year="2023"
+              url="https://github.com/petershaan12/Wonderful-Indonesia-Clone"
+            />
+
+            <ProjectsItem
+              src="/projects/indodrives.png"
+              title="Indo Drives Solution"
+              tags={["wordpress", "c-panel"]}
+              year="2019"
+              url="http://www.indodrives.rf.gd"
+            />
           </div>
+          <SectionHeader title="Experience" />
+          <ProjectExperience
+            period="August 2023 - Present"
+            position="Programmer"
+            organizationUrl="https://unai.edu"
+            organizationName="Universitas Advent Indonesia"
+            description="Create & Develop Website <a href='https://unai.edu' className='underline font-medium text-black dark:text-white'>unai.edu</a> (NEW 2023) <br /> Development & Database Administrator Module UNAI (Universitas Advent Indonesia)"
+            skills={["php", "Bootstrap", "mysql"]}
+          />
         </section>
       </main>
     </>

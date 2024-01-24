@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillLinkedin, AiFillYoutube, AiFillInstagram } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer className="flex flex-col items-center py-10 pt-32 text-center w-full ">
       <hr class="h-px my-3 bg-gray-200 border-0 w-full  dark:bg-gray-700 -z-10" />
@@ -29,3 +29,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer;
