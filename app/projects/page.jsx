@@ -10,7 +10,7 @@ export default function Tools() {
     <>
       <main className="container md:w-1/2">
         <section className="px-8 md:px-0">
-          <SectionTitle>Project Aku</SectionTitle>
+          <SectionTitle>Project & Experience</SectionTitle>
           <p>
             berikut adalah experience aku dibidang{" "}
             <span className=" underline font-medium text-black dark:text-white">
@@ -21,6 +21,13 @@ export default function Tools() {
           <SectionHeader title="Project" />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <ProjectsItem
+              src="/projects/news.unai.png"
+              title="UNAI News"
+              tags={["wordpress", "avada"]}
+              year="2024"
+              url="https://www.news.unai.edu"
+            />
             <ProjectsItem
               src="/projects/unai.png"
               title="Universitas Advent Indonesia"
@@ -77,14 +84,64 @@ export default function Tools() {
             />
           </div>
           <SectionHeader title="Experience" />
-          <ProjectExperience
+          {/* <ProjectExperience
             period="August 2023 - Present"
             position="Programmer"
             organizationUrl="https://unai.edu"
             organizationName="Universitas Advent Indonesia"
             description="Create & Develop Website <a href='https://unai.edu' className='underline font-medium text-black dark:text-white'>unai.edu</a> (NEW 2023) <br /> Development & Database Administrator Module UNAI (Universitas Advent Indonesia)"
             skills={["php", "Bootstrap", "mysql"]}
-          />
+          /> */}
+          <div className="prose prose-zinc dark:prose-invert max-w-full w-full">
+            <p>August 2023 - Present</p>
+            <h1 className="text-3xl my-2">
+              <span className="font-helvetica">Programmer at</span>
+              <a
+                href="https://unai.edu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline px-2"
+              >
+                "Universitas Advent Indonesia"
+              </a>
+            </h1>
+
+            <p>
+              Create & Develop Website{" "}
+              <a
+                href="https://unai.edu"
+                className="underline font-medium text-black dark:text-white"
+              >
+                unai.edu
+              </a>{" "}
+               <span>& </span>
+              <a
+                href="https://news.unai.edu"
+                className="underline font-medium text-black dark:text-white"
+              >
+               news.unai.edu
+              </a>{" "}
+              (NEW 2024) <br /> Development & Database Administrator Module UNAI
+              (Universitas Advent Indonesia)
+            </p>
+            <Image
+              src="/projects/unaiRevamp.png"
+              width={900}
+              height={500}
+              className="rounded-lg"
+            />
+            
+            <a>unai.edu</a>
+
+            
+
+            <h3 id="stack-used" data-svelte-h="svelte-ghvkof">Stack used</h3>
+            <ul>
+              <li>php</li>
+              <li>Bootstrap</li>
+              <li>mysql</li>
+            </ul>
+          </div>
         </section>
       </main>
     </>

@@ -19,9 +19,46 @@ export default function Tools() {
 
           <div className="flex md:flex-nowrap flex-wrap">
             <div className=" md:w-1/2 mr-5">
-              <SectionHeader title="Software Development" />
+              <SectionHeader title="Tech Stack & Software Development" />
 
               <div class="grid grid-cols-2 gap-2">
+                <ToolsItem
+                  url="https://react.dev/"
+                  lightImageSrc="/icon/react.png"
+                  currentTheme={currentTheme}
+                  toolName="React Js"
+                  description="For Building Interfaces"
+                />
+                <ToolsItem
+                  url="https://nextjs.org/"
+                  darkImageSrc="/icon/next_dark.png"
+                  lightImageSrc="/icon/next.png"
+                  currentTheme={currentTheme}
+                  toolName="Next Js"
+                  description="For Building Website"
+                />
+                <ToolsItem
+                  url="https://wordpress.org/"
+                  lightImageSrc="/icon/wordpress.png"
+                  currentTheme={currentTheme}
+                  toolName="Wordpress"
+                  description="For Building Website"
+                />
+                <ToolsItem
+                  url="https://tailwindcss.com/"
+                  lightImageSrc="/icon/tailwind.png"
+                  currentTheme={currentTheme}
+                  toolName="Tailwind CSS"
+                  description="For Styling Website"
+                />
+                <ToolsItem
+                  url="https://vercel.com/"
+                  darkImageSrc="/icon/vercel_dark.png"
+                  lightImageSrc="/icon/vercel.png"
+                  currentTheme={currentTheme}
+                  toolName="Vercel"
+                  description="For Styling Website"
+                />
                 <ToolsItem
                   url="https://code.visualstudio.com/"
                   lightImageSrc="/icon/vscode.png"
@@ -81,6 +118,7 @@ export default function Tools() {
                   description="Mouse"
                 />
               </div>
+
             </div>
           </div>
         </section>
