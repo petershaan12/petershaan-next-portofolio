@@ -26,7 +26,7 @@ export default function Tools() {
               title="UNAI News"
               tags={["wordpress", "avada"]}
               year="2024"
-              url="https://www.news.unai.edu"
+              url="https://news.unai.edu/"
             />
             <ProjectsItem
               src="/projects/unai.png"
