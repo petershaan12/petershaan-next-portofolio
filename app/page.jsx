@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <main className="container md:px-10 lg:px-40 -mt-5">
-        <section className="container px-8 md:px-0 -mb-40 lg:-mb-56  ">
+      <main className="mt-8 md:px-10 lg:px-40 -mt-5">
+        <section className=" px-8 md:px-0 -mb-40 lg:-mb-56  ">
           <div className="md:flex block">
             <div className="text-left w-full md:w-8/12 md:p-10 md:py-10 ">
               <h2 className="font-helvetica text-5xl py-2 text-black font-medium lg:text-6xl dark:text-white">
@@ -30,7 +30,7 @@ export default function Home() {
               </p>
             </div>
             <div className="md:relative md:w-4/12">
-                <Image src={me}  className="lg:-mt-16 md:-mt-0 -mt-6 -mb-12" />
+              <Image src={me} className="lg:-mt-16 md:-mt-0 -mt-6 -mb-12" />
             </div>
           </div>
         </section>

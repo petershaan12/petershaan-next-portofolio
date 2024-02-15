@@ -8,7 +8,7 @@ import ProjectExperience from "../components/ProjectExperience";
 export default function Tools() {
   return (
     <>
-      <main className="container md:w-1/2">
+      <main className=" md:w-1/2">
         <section className="px-8 md:px-0">
           <SectionTitle>Project & Experience</SectionTitle>
           <p>
@@ -114,12 +114,12 @@ export default function Tools() {
               >
                 unai.edu
               </a>{" "}
-               <span>& </span>
+              <span>& </span>
               <a
                 href="https://news.unai.edu"
                 className="underline font-medium text-black dark:text-white"
               >
-               news.unai.edu
+                news.unai.edu
               </a>{" "}
               (NEW 2024) <br /> Development & Database Administrator Module UNAI
               (Universitas Advent Indonesia)
@@ -130,12 +130,12 @@ export default function Tools() {
               height={500}
               className="rounded-lg"
             />
-            
+
             <a>unai.edu</a>
 
-            
-
-            <h3 id="stack-used" data-svelte-h="svelte-ghvkof">Stack used</h3>
+            <h3 id="stack-used" data-svelte-h="svelte-ghvkof">
+              Stack used
+            </h3>
             <ul>
               <li>php</li>
               <li>Bootstrap</li>

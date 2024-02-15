@@ -9,15 +9,15 @@ import ThemeSwitcher from "../context/ThemeSwitcher";
 const navLinks = [
   {
     title: "Projects",
-    path: "projects",
+    path: "/projects",
   },
   {
     title: "Blog",
-    path: "blog",
+    path: "/blog",
   },
   {
     title: "Tools",
-    path: "tools",
+    path: "/tools",
   },
 ];
 
@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <header className="container px-10 md:px-20 lg:px-40 ">
-      <nav className=" py-10 mb-12 flex justify-between">
+      <nav className=" pt-10 mb-8 flex justify-between">
         <Link href={"/"}>
           <h1 className="cursor-pointer font-helvetica text-2xl text-gray-800 dark:text-white ">
             Ps
