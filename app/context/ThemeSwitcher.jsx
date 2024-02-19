@@ -10,8 +10,8 @@ const ThemeSwitcher = () => {
 
   const isNightTime = () => {
     const currentHour = new Date().getHours();
-    console.log(currentHour);
-    return currentHour >= 18 || currentHour < 6; 
+    // console.log(currentHour);
+    return currentHour >= 18 || currentHour < 6;
   };
 
   useEffect(() => {

@@ -2,6 +2,8 @@ import "./globals.css";
 import Footer from "@/app/components/Footer";
 import Provider from "./context/Provider";
 import Navbar from "@/app/components/Navbar";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 export const metadata = {
   title: "Peter Shaan",
@@ -22,7 +24,7 @@ export default function RootLayout({ children }) {
       <body className=" bg-white flex flex-col items-center justify-center  dark:bg-gray-900">
         <Provider>
           <Navbar />
-          {children}
+          <Suspense fallback={<Loading />}>{children}</Suspense>
           <Footer />
         </Provider>
       </body>

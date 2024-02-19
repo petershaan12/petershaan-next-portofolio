@@ -129,6 +129,7 @@ export default function Tools() {
               width={900}
               height={500}
               className="rounded-lg"
+              alt="unai_revamp"
             />
 
             <a>unai.edu</a>

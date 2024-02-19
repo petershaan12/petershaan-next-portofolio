@@ -1,21 +1,39 @@
 "use client";
+import { TbHeart as HeartIcon } from "react-icons/tb";
+import { TbHeartFilled as HeartFilledIcon } from "react-icons/tb";
 import SectionTitle from "@/app/components/SectionTitle";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { getLike, postLike } from "@/app/api/like";
 
 export default function KenapaReact() {
-  const [views, setViews] = useState(0);
+  const [likes, setLikes] = useState(0);
+  const [liked, setLiked] = useState(false);
 
   useEffect(() => {
-    const jumlahViews = localStorage.getItem("views");
-    if (jumlahViews) setViews(parseInt(jumlahViews));
-    else localStorage.setItem("views", "0");
-    // Tambah 1 view setiap kali halaman dimuat
-    setViews((prevViews) => prevViews + 1);
-    // Simpan views baru di local storage
-    localStorage.setItem("views", views.toString());
+    // Fetch initial likes when component mounts
+    getLike("kenapa-react", (likesCount) => {
+      setLikes(likesCount);
+      setLiked(likesCount > 0);
+    });
   }, []);
+
+  const handleLikeClick = () => {
+    if (!liked) {
+      // If post is not liked, like it
+      postLike("kenapa-react", () => {
+        setLikes((prevLikes) => prevLikes + 1);
+        setLiked(true);
+      });
+    } else {
+      // If post is already liked, unlike it
+      // (You may implement unlike functionality in your like.js if needed)
+      // For now, let's just decrement the likes count locally
+      setLikes((prevLikes) => prevLikes - 1);
+      setLiked(false);
+    }
+  };
 
   return (
     <main className="container md:w-1/2  ">
@@ -29,7 +47,21 @@ export default function KenapaReact() {
           <SectionTitle>Kenapa Belajar React menurut gue</SectionTitle>
           <div className="flex flex-row  gap-x-5 mt-3">
             <p>• 14 Februari 2023 </p>
-            <p>• {views} Views</p>
+            <button
+              onClick={handleLikeClick}
+              className={`flex items-center ${
+                liked ? "text-red-500" : "text-gray-500"
+              }`}
+            >
+              {liked ? (
+                <HeartFilledIcon className="w-6 h-6" />
+              ) : (
+                <HeartIcon className="w-6 h-6" />
+              )}
+              <span className="ml-2 text-black dark:text-white">
+                {likes} Likes
+              </span>
+            </button>
           </div>
           <div className="prose prose-lg w-full text-pretty prose-a:no-underline prose-zinc dark:prose-invert mt-14">
             <p className="text-justify">

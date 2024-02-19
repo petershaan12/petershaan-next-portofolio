@@ -1,7 +1,18 @@
+"use client";
 import Link from "next/link";
 import SectionTitle from "../components/SectionTitle";
+import { useEffect, useState } from "react";
+import { getLike } from "../api/like";
 
 export default function Blog() {
+  const [likes, setLikes] = useState(0);
+
+  useEffect(() => {
+    // Fetch likes count when component mounts
+    getLike("kenapa-react", (likesCount) => {
+      setLikes(likesCount);
+    });
+  }, []);
   return (
     <main className="container md:w-1/2">
       <section className="px-8 md:px-0">
@@ -15,7 +26,7 @@ export default function Blog() {
               <h1 className="font-medium text-lg">
                 Kenapa Belajar React versi gue
               </h1>
-              <p className="text-sm opacity-60">0 views</p>
+              <p className="text-sm opacity-60"> {likes} Likes</p>
             </div>
           </div>
         </Link>

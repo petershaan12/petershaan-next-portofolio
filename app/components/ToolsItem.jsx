@@ -18,11 +18,16 @@ const ToolsItem = ({
       rel="noopener noreferrer"
       className="relative group border rounded-md p-4 transition-all hover:border-black"
     >
-      <Image src={imageSrc} width={50} height={50} />
+      <Image
+        src={imageSrc}
+        width={50}
+        height={50}
+        alt={`project_${toolName.replace(/\s+/g, "").toLowerCase()}`}
+      />
       <p className="font-semibold">{toolName}</p>
       <p className="text-xs">{description}</p>
       <svg
-        class="absolute  top-4 right-4 group-hover:scale-100 scale-0 transition rotate-180 group-hover:rotate-0 duration-300"
+        className="absolute  top-4 right-4 group-hover:scale-100 scale-0 transition rotate-180 group-hover:rotate-0 duration-300"
         width="18px"
         height="18px"
         viewBox="0 0 24 24"
@@ -32,9 +37,9 @@ const ToolsItem = ({
         <path
           d="M7 17L17 7M17 7H8M17 7V16"
           stroke="#FFFFFF"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></path>
       </svg>
     </a>

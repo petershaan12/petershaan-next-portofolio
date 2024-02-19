@@ -21,7 +21,7 @@ export default function Tools() {
             <div className=" md:w-1/2 mr-5">
               <SectionHeader title="Tech Stack & Software Development" />
 
-              <div class="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-2 gap-2">
                 <ToolsItem
                   url="https://react.dev/"
                   lightImageSrc="/icon/react.png"
@@ -103,7 +103,7 @@ export default function Tools() {
             <div className="md:w-1/2 w-full">
               <SectionHeader title="Hardware" />
 
-              <div class="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-2 gap-2">
                 <ToolsItem
                   url="https://www.msi.com/Laptop/GF65-Thin-10UX/Specification"
                   lightImageSrc="/icon/msi.png"
@@ -118,7 +118,6 @@ export default function Tools() {
                   description="Mouse"
                 />
               </div>
-
             </div>
           </div>
         </section>
