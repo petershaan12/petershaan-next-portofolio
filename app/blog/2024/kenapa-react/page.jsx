@@ -15,7 +15,6 @@ export default function KenapaReact() {
     // Fetch initial likes when component mounts
     getLike("kenapa-react", (likesCount) => {
       setLikes(likesCount);
-      setLiked(likesCount > 0);
     });
   }, []);
 
@@ -27,9 +26,6 @@ export default function KenapaReact() {
         setLiked(true);
       });
     } else {
-      // If post is already liked, unlike it
-      // (You may implement unlike functionality in your like.js if needed)
-      // For now, let's just decrement the likes count locally
       setLikes((prevLikes) => prevLikes - 1);
       setLiked(false);
     }
