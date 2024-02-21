@@ -4,33 +4,9 @@ import { TbHeartFilled as HeartFilledIcon } from "react-icons/tb";
 import SectionTitle from "@/app/components/SectionTitle";
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import { getLike, postLike } from "@/app/api/like";
+import { LikeButton } from "@lyket/react";
 
 export default function KenapaReact() {
-  const [likes, setLikes] = useState(0);
-  const [liked, setLiked] = useState(false);
-
-  useEffect(() => {
-    // Fetch initial likes when component mounts
-    getLike("kenapa-react", (likesCount) => {
-      setLikes(likesCount);
-    });
-  }, []);
-
-  const handleLikeClick = () => {
-    if (!liked) {
-      // If post is not liked, like it
-      postLike("kenapa-react", () => {
-        setLikes((prevLikes) => prevLikes + 1);
-        setLiked(true);
-      });
-    } else {
-      setLikes((prevLikes) => prevLikes - 1);
-      setLiked(false);
-    }
-  };
-
   return (
     <main className="container md:w-1/2  ">
       <section className="px-8 md:px-0">
@@ -41,9 +17,33 @@ export default function KenapaReact() {
         <article>
           <p className="text-6xl mt-5 text-left -ml-5 mb-6">❓</p>
           <SectionTitle>Kenapa Belajar React menurut gue</SectionTitle>
-          <div className="flex flex-row  gap-x-5 mt-3">
-            <p>• 14 Februari 2023 </p>
-            <button
+          <div className="flex flex-row gap-x-5 mt-2 ">
+            <p>February 14, 2024 </p>
+            <LikeButton id="kenapa-belajar-react" namespace="post">
+              {({ totalLikes, handlePress, userLiked, isLoading }) => (
+                <>
+                  <button
+                    onClick={handlePress}
+                    disabled={isLoading}
+                    className={`flex items mt-1-center ${
+                      userLiked ? "text-red-500" : "text-gray-500"
+                    }`}
+                  >
+                    {userLiked ? (
+                      <HeartFilledIcon className="w-6 h-6" />
+                    ) : (
+                      <HeartIcon className="w-6 h-6" />
+                    )}
+                  </button>
+
+                  <span className="-ml-3 text-black dark:text-white">
+                    {totalLikes} Likes
+                  </span>
+                </>
+              )}
+            </LikeButton>
+
+            {/* <button
               onClick={handleLikeClick}
               className={`flex items-center ${
                 liked ? "text-red-500" : "text-gray-500"
@@ -57,7 +57,7 @@ export default function KenapaReact() {
               <span className="ml-2 text-black dark:text-white">
                 {likes} Likes
               </span>
-            </button>
+            </button> */}
           </div>
           <div className="prose prose-lg w-full text-pretty prose-a:no-underline prose-zinc dark:prose-invert mt-14">
             <p className="text-justify">

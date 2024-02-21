@@ -1,18 +1,18 @@
 "use client";
 import Link from "next/link";
 import SectionTitle from "../components/SectionTitle";
-import { useEffect, useState } from "react";
-import { getLike } from "../api/like";
+// import { useEffect, useState } from "react";
+import { LikeButton } from "@lyket/react";
 
 export default function Blog() {
-  const [likes, setLikes] = useState(0);
+  // const [likes, setLikes] = useState(0);
 
-  useEffect(() => {
-    // Fetch likes count when component mounts
-    getLike("kenapa-react", (likesCount) => {
-      setLikes(likesCount);
-    });
-  }, []);
+  // useEffect(() => {
+  //   // Fetch likes count when component mounts
+  //   getLike("kenapa-react", (likesCount) => {
+  //     setLikes(likesCount);
+  //   });
+  // }, []);
   return (
     <main className="container md:w-1/2">
       <section className="px-8 md:px-0">
@@ -26,7 +26,16 @@ export default function Blog() {
               <h1 className="font-medium text-lg">
                 Kenapa Belajar React versi gue
               </h1>
-              <p className="text-sm opacity-60"> {likes} Likes</p>
+              <LikeButton id="kenapa-belajar-react" namespace="post" hideCounterIfLessThan={1}
+			>
+				{({
+					totalLikes,
+				}) => (
+					<>
+						<div>{totalLikes} likes</div>
+					</>
+				)}
+              </LikeButton>
             </div>
           </div>
         </Link>

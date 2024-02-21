@@ -2,6 +2,7 @@
 
 import { ThemeProvider } from "next-themes";
 import { useState, useEffect } from "react";
+import { Provider as LyketProvider } from "@lyket/react";
 
 const Provider = ({ children }) => {
   const [mounted, setMounted] = useState(false);
@@ -15,9 +16,11 @@ const Provider = ({ children }) => {
   }
 
   return (
-    <ThemeProvider enableSystem={true} attribute="class">
-      {children}
-    </ThemeProvider>
+    <LyketProvider apiKey={process.env.NEXT_PUBLIC_LYKET_API_KEY}>
+      <ThemeProvider enableSystem={true} attribute="class">
+        {children}
+      </ThemeProvider>
+    </LyketProvider>
   );
 };
 
