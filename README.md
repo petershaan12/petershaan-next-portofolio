@@ -4,7 +4,9 @@
 <h1 align="center">
   petershaan.com
 </h1>
+
 [![Author](https://img.shields.io/badge/author-muhammad%20bhaska-green.svg)](https://github.com/muhammadbhaska)
+
 <p align="center">
   Publish on <a href="https://petershaan.com" target="_blank">petershaan.com</a> built with <a href="https://nextjs.org/" target="_blank">Nextjs</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
 </p>
