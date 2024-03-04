@@ -4,6 +4,7 @@
 <h1 align="center">
   petershaan.com
 </h1>
+[Peter Shaan](https://github.com/petershaan12)
 <p align="center">
   Publish on <a href="https://petershaan.com" target="_blank">petershaan.com</a> built with <a href="https://nextjs.org/" target="_blank">Nextjs</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
 </p>
