@@ -62,9 +62,9 @@ const MenuOverlay = ({ links, onClose }) => {
           <h1 className="px-8 text-black dark:text-white font-bold text-3xl">
             Menu
           </h1>
-          <ul className="flex flex-col py-5 px-8 text-black dark:text-white">
+          <ul className="flex flex-col py-5 px-8 text-black dark:text-gray-500">
             {links.map((link, index) => (
-              <li key={index} onClick={handleClose}>
+              <li key={index} onClick={handleClose} className="text-xs">
                 <NavLink href={link.path} title={link.title} />
               </li>
             ))}

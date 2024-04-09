@@ -1,28 +1,25 @@
 import React from "react";
-import me from "../public/me1.png";
+import me from "../public/peter_shaan.png";
 import Image from "next/image";
-import { Lexend } from "next/font/google";
-
-const lexend = Lexend({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
-      <main className="container pt-8 lg:px-40">
-        <section className="container -mb-40 xl:-mb-56 px-8 lg:px-0 ">
+      <main className="container mb-10 md:mb-0 lg:px-40">
+        <section className="container -mb-40 px-8 lg:px-0 ">
           <div className="md:flex block ">
-            <div className="w-full md:w-8/12 xl:mt-20 md:px-10  ">
+            <div className="w-full md:w-7/12 pt-10 xl:pt-20 md:px-10  ">
               <h2
                 className={`text-5xl xl:text-6xl dark:text-white font-helvetica`}
               >
                 Peter Shaan
               </h2>
               <h3 className="text-md xl:text-xl dark:text-black py-3 xl:py-5 ">
-                <span className="bg-yellow-200 dark:bg-[#111215]  dark:text-gray-400 ">
+                <span className="bg-[#AFFFB2] dark:opacity-80 ">
                   Programmer and Frontend Dev
                 </span>
               </h3>
-              <p className="text-md text-black/80 font-jetbrains dark:text-gray-400 ">
+              <p className="text-xs lg:text-lg text-black/80 font-jetbrains dark:text-gray-400 ">
                 21 years old from 🇮🇩,🖥️ Student of Informatic Technology, and
                 also Content Creator and Video Editor
                 <a
@@ -34,11 +31,11 @@ export default function Home() {
                 </a>
               </p>
             </div>
-            <div className="md:relative md:w-4/12">
+            <div className="md:relative md:w-5/12 ">
               <Image
                 priority={true}
                 src={me}
-                className="lg:-mt-16 md:-mt-10 -mt-6 -mb-12"
+                className="md:-mt-10  md:mb-2"
                 alt="peter"
               />
             </div>

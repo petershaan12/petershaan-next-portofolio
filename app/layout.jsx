@@ -5,17 +5,14 @@ import Navbar from "@/app/components/Navbar";
 import { Suspense } from "react";
 import Loading from "./loading";
 import { JetBrains_Mono } from "next/font/google";
-import { Lexend } from "next/font/google";
+
 
 const jetbrains = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-jetbrains",
 });
 
-const lexend = Lexend({
-  subsets: ["latin"],
-  variable: "--font-lexend",
-});
+
 
 export const metadata = {
   title: "Peter Shaan",

@@ -16,7 +16,7 @@ const ToolsItem = ({
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="relative group border rounded-md p-4 transition-all hover:border-black"
+      className="relative group border dark:border-gray-400 rounded-md p-4 transition-all hover:border-black"
     >
       <Image
         src={imageSrc}
@@ -24,8 +24,8 @@ const ToolsItem = ({
         height={50}
         alt={`project_${toolName.replace(/\s+/g, "").toLowerCase()}`}
       />
-      <p className="font-semibold">{toolName}</p>
-      <p className="text-xs">{description}</p>
+      <p className="font-semibold dark:text-gray-400">{toolName}</p>
+      <p className="text-xs dark:text-gray-400">{description}</p>
       <svg
         className="absolute  top-4 right-4 group-hover:scale-100 scale-0 transition rotate-180 group-hover:rotate-0 duration-300"
         width="18px"

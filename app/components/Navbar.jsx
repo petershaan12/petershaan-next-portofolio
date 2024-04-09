@@ -23,13 +23,14 @@ const navLinks = [
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const logo = "</ps>";
 
   return (
     <header className="container px-10 md:px-20 lg:px-40 ">
       <nav className=" pt-10 mb-8 flex justify-between">
         <Link href={"/"}>
-          <h1 className="cursor-pointer font-helvetica text-2xl text-gray-800 dark:text-gray-400 ">
-            Ps
+          <h1 className="cursor-pointer leading-tight font-extrabold text-2xl text-gray-800 dark:text-gray-400 ">
+            {logo}
           </h1>
         </Link>
         <ul className="flex items-center text-gray-800 dark:text-gray-400">
