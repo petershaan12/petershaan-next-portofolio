@@ -52,7 +52,7 @@ const MenuOverlay = ({ links, onClose }) => {
     <>
       <div style={overlayBackgroundStyle} onClick={handleClose}></div>
       <div style={overlayStyle} ref={overlayRef}>
-        <div className="w-64 bg-white h-full overflow-y-auto dark:bg-gray-900">
+        <div className="w-64 bg-white h-full overflow-y-auto dark:bg-[#111215]">
           <div className="flex justify-end p-4">
             <XMarkIcon
               className="w-9 cursor-pointer active:border-4 active:border-blue-300 "

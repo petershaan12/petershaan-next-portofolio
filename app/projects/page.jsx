@@ -11,9 +11,9 @@ export default function Tools() {
       <main className=" md:w-1/2">
         <section className="px-8 md:px-0">
           <SectionTitle>Project & Experience</SectionTitle>
-          <p>
+          <p className="dark:text-gray-400 ">
             berikut adalah experience aku dibidang{" "}
-            <span className=" underline font-medium text-black dark:text-white">
+            <span className=" underline font-medium text-black dark:text-gray-400 ">
               Pekerjaan & Projek
             </span>
           </p>
@@ -21,6 +21,20 @@ export default function Tools() {
           <SectionHeader title="Project" />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <ProjectsItem
+              src="/projects/dik-dea.png"
+              title="DIK DEA"
+              tags={["Next Js", "Prisma", "Clerk"]}
+              year="2024"
+              url="https://dik-dea.com/"
+            />
+            <ProjectsItem
+              src="/projects/fti.png"
+              title="FTI Faculty"
+              tags={["wordpress", "avada"]}
+              year="2024"
+              url="https://fti.unai.edu/"
+            />
             <ProjectsItem
               src="/projects/news.unai.png"
               title="UNAI News"
@@ -93,7 +107,7 @@ export default function Tools() {
             skills={["php", "Bootstrap", "mysql"]}
           /> */}
           <div className="prose prose-zinc dark:prose-invert max-w-full w-full">
-            <p>August 2023 - Present</p>
+            <p className="dark:text-gray-400 ">August 2023 - Present</p>
             <h1 className="text-3xl my-2">
               <span className="font-helvetica">Programmer at</span>
               <a
@@ -106,18 +120,18 @@ export default function Tools() {
               </a>
             </h1>
 
-            <p>
+            <p className="dark:text-gray-400 ">
               Create & Develop Website{" "}
               <a
                 href="https://unai.edu"
-                className="underline font-medium text-black dark:text-white"
+                className="underline font-medium text-black dark:text-gray-400 "
               >
                 unai.edu
               </a>{" "}
               <span>& </span>
               <a
                 href="https://news.unai.edu"
-                className="underline font-medium text-black dark:text-white"
+                className="underline font-medium text-black dark:text-gray-400 "
               >
                 news.unai.edu
               </a>{" "}

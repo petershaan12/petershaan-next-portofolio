@@ -13,8 +13,8 @@ const ProjectItem = ({ src, title, tags, year, url }) => {
           />
         </div>
         <div className="mt-2 px-2 py-1 w-full">
-          <h6 className="font-medium text-sm">{title}</h6>
-          <p className="font-regular text-xs">[{year}]</p>
+          <h6 className="font-bold text-sm dark:text-gray-400 ">{title}</h6>
+          <p className="font-regular text-xs dark:text-gray-400">[{year}]</p>
           {tags.map((tag) => (
             <button
               key={tag}

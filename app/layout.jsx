@@ -4,6 +4,18 @@ import Provider from "./context/Provider";
 import Navbar from "@/app/components/Navbar";
 import { Suspense } from "react";
 import Loading from "./loading";
+import { JetBrains_Mono } from "next/font/google";
+import { Lexend } from "next/font/google";
+
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains",
+});
+
+const lexend = Lexend({
+  subsets: ["latin"],
+  variable: "--font-lexend",
+});
 
 export const metadata = {
   title: "Peter Shaan",
@@ -21,7 +33,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className=" bg-white flex flex-col items-center justify-center  dark:bg-gray-900">
+      <body
+        className={`${jetbrains.variable} font-jetbrains bg-white flex flex-col items-center justify-center  dark:bg-[#111215]`}
+      >
         <Provider>
           <Navbar />
           <Suspense fallback={<Loading />}>{children}</Suspense>

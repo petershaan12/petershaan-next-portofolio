@@ -15,7 +15,9 @@ export default function Tools() {
       <main className="container md:w-1/2">
         <section className="px-8 md:px-0">
           <SectionTitle>Tools yang aku gunakan sehari-hari</SectionTitle>
-          <p>mulai dari hal development, design, maupun produktivitas</p>
+          <p className="dark:text-gray-400">
+            mulai dari hal development, design, maupun produktivitas
+          </p>
 
           <div className="flex md:flex-nowrap flex-wrap">
             <div className=" md:w-1/2 mr-5">

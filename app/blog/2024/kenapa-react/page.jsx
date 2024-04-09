@@ -10,7 +10,7 @@ export default function KenapaReact() {
   return (
     <main className="container md:w-1/2  ">
       <section className="px-8 md:px-0">
-        <Link href="/blog" className="hover:underline ">
+        <Link href="/blog" className="hover:underline dark:text-gray-400 ">
           ← Back
         </Link>
 
@@ -18,7 +18,7 @@ export default function KenapaReact() {
           <p className="text-6xl mt-5 text-left -ml-5 mb-6">❓</p>
           <SectionTitle>Kenapa Belajar React menurut gue</SectionTitle>
           <div className="flex flex-row gap-x-5 mt-2 ">
-            <p>February 14, 2024 </p>
+            <p className="dark:text-gray-400">February 14, 2024 </p>
             <LikeButton id="kenapa-belajar-react" namespace="post">
               {({ totalLikes, handlePress, userLiked, isLoading }) => (
                 <>
@@ -36,7 +36,7 @@ export default function KenapaReact() {
                     )}
                   </button>
 
-                  <span className="-ml-3 text-black dark:text-white">
+                  <span className="-ml-3 text-black dark:text-gray-400">
                     {totalLikes} Likes
                   </span>
                 </>
@@ -59,7 +59,7 @@ export default function KenapaReact() {
               </span>
             </button> */}
           </div>
-          <div className="prose prose-lg w-full text-pretty prose-a:no-underline prose-zinc dark:prose-invert mt-14">
+          <div className="prose prose-lg w-full text-pretty text-md dark:text-gray-400 prose-a:no-underline prose-zinc dark:prose-invert mt-14">
             <p className="text-justify">
               Sebenarnya gaada alasan untuk tidak belajar{" "}
               <a href="https://react.dev/">react</a> buat kamu yang suka dalam
