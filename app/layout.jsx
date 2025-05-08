@@ -4,15 +4,12 @@ import Provider from "./context/Provider";
 import Navbar from "@/app/components/Navbar";
 import { Suspense } from "react";
 import Loading from "./loading";
-import { JetBrains_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 
-
-const jetbrains = JetBrains_Mono({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-jetbrains",
+  variable: "--font-inter",
 });
-
-
 
 export const metadata = {
   title: "Peter Shaan",
@@ -31,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${jetbrains.variable} font-jetbrains bg-white flex flex-col items-center justify-center  dark:bg-[#111215]`}
+        className={`${inter.variable}  bg-white flex flex-col items-center justify-center  dark:bg-[#111215]`}
       >
         <Provider>
           <Navbar />

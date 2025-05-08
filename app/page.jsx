@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../public/peter_shaan.png";
+import me from "../public/me1.png";
 import Image from "next/image";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
                 Peter Shaan
               </h2>
               <h3 className="text-md xl:text-xl dark:text-black py-3 xl:py-5 ">
-                <span className="bg-[#AFFFB2] dark:opacity-80 ">
+                <span className="bg-[#FEF08A] dark:opacity-80 ">
                   Programmer and Frontend Dev
                 </span>
               </h3>
