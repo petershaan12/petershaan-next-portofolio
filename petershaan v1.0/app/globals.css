@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.font-helvetica {
+  font-family: 'Helvetica-Bold', sans-serif;
+}
+
+
+@font-face {
+  font-family: 'Helvetica-Bold';
+  src: url('/Helvetica-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
