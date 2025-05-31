@@ -5,6 +5,7 @@ import Navbar from "@/app/components/Navbar";
 import { Suspense } from "react";
 import Loading from "./loading";
 import { Inter } from "next/font/google";
+import NotifNew from "./components/NotifNew";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -32,8 +33,10 @@ export default function RootLayout({ children }) {
       >
         <Provider>
           <Navbar />
+          {/* Munculin ini selalu saat refresh karena  */}
           <Suspense fallback={<Loading />}>{children}</Suspense>
           <Footer />
+          <NotifNew />
         </Provider>
       </body>
     </html>
